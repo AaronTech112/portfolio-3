@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Portfolio content="HTML, CSS, JavaScript" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style></style>
@@ -151,8 +152,6 @@
 
         <style>
           #click{
-            margin-left: 550px;
-            border-radius: 5px;
             color: white;
             background-color: rgb(46, 46, 190);
             width: 200px;
@@ -175,7 +174,9 @@
          <h3>i am a devotaed to programming</h3>
        </div>
 
+      <div style="text-align: center;">
       <button id="click" onclick="ClickFunction()"> <h2 style="text-align: center; align-content: center;">CLICK ME !!</h2></button>
+      </div>
 
        <div class="cool" id="why2">
         <h2>Ready Learn More</h2>
@@ -284,14 +285,31 @@
                background-color: lightseagreen;
              }
            </style>
+           <div style="text-align: center;">
            <button type="button" onclick="alert('THANKS FOR HIRING ME!!')" id="hire"
            style="font-size: 30px; font-family:'Trebuchet MS'; 
-                  margin-top: 1px; margin-left: 550px; background-color: lightslategrey; "> Hire Now</button>
+                  margin-top: 1px; background-color: lightslategrey; "> Hire Now
+           </button>
+           </div>
       </form>
 
-      <footer style=" margin-top: 40px;"> &copy; Copyright claims &copy;</br> 
-      &reg;Fully Registered &reg;
-      </footer>
+      <footer style=" margin-top: 40px;">
+        &copy; Copyright claims &copy;</br> 
+     &reg;Fully Registered &reg;
+
+     <form action="/action_page.php"
+     oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+     0
+     <h2 style="margin-left: 5px; color: burlywood;">RATE MY WEBSITE</h2>
+     <input type="range"  id="a" name="a" value="0">
+     100 +
+     <input type="number" id="b" name="b" value="0">
+     =
+     <output name="x" for="a b"></output>
+     <br><br>
+     <input type="submit">
+   </form>
+     </footer>
 
 </body>
 </html>
