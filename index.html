@@ -292,22 +292,52 @@
            </div>
       </form>
 
+      <style> 
+      .card {
+        box-shadow: 0 6px 12px 0 rgba(255, 0, 0, 0.2);
+        transition: 3s;
+        width: 60%;
+        height: 200px;
+        background: rgb(62, 60, 185);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 0%;
+        text-align: center;
+        margin-left: 22%;
+        margin-top: 2%;
+        border-radius: 10px;
+        }
+        
+        .card:hover {
+          cursor: pointer;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          width: 40%;
+          height: 250px;
+        }
+      </style>
+
+      <div class="card">
+        <form action="/action_page.php"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          <h2 style="margin-left: 5px; color: rgb(255, 255, 255);">RATE MY WEBSITE</h2>
+          <input type="range"  id="a" name="a" value="0">
+          100 +
+          <input type="number" id="b" name="b" value="0">
+          =
+          <output name="x" for="a b"></output>
+          <br><br>
+          <input type="submit">
+        </form>  
+      </div>
+
+
+      
+
+
       <footer style=" margin-top: 40px;">
         &copy; Copyright claims &copy;</br> 
      &reg;Fully Registered &reg;
-
-     <form action="/action_page.php"
-     oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-     0
-     <h2 style="margin-left: 5px; color: burlywood;">RATE MY WEBSITE</h2>
-     <input type="range"  id="a" name="a" value="0">
-     100 +
-     <input type="number" id="b" name="b" value="0">
-     =
-     <output name="x" for="a b"></output>
-     <br><br>
-     <input type="submit">
-   </form>
      </footer>
 
 </body>
