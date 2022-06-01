@@ -212,23 +212,23 @@
         <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd><u>Sign Up For My Online Courses</u></kbd></h2>
         
         <label for="fname" >First Name:</label>
-        <input type="text" id="fname"> <br>
+        <input type="text" id="fname" required> <br>
 
         <label for="sname">Surname:</label>
-        <input type="text" id="sname"> <br>
+        <input type="text" id="sname" required> <br>
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email"> <br>
+        <input type="email" name="email" id="email" required> <br>
 
         <label for="tel">Phone Numeber</label>
-        <input type="tel" name="tel" id="tel"> <br>
+        <input type="tel" name="tel" id="tel" required> <br>
 
         <b>Gender:</b> <br>
         <label for="male">Male</label>
-        <input type="radio" name="male" id="male">
+        <input type="radio" name="male" id="male" required>
 
         <label for="female">Female</label>
-        <input type="radio" name="female" id="female"> <br>
+        <input type="radio" name="female" id="female" required> <br>
 
         <b><u>Selected Prefered Programming Language: </u></b> <br>
         <label for="html">HTML</label> 
@@ -245,15 +245,16 @@
 
         <style>
           #reg:hover{
-            background-color: lightblue;
+            background-color: blue;
           }
         </style>
-        <input type="button" value="Register Now" id="reg" style="margin-left: 30px;" >
+        <input type="button" value="Register Now" id="reg" style="margin-left: 30px; font-size: 25px; 
+        background-color: green; color: honeydew;"  >
 
       </form>
 
       <form style="background-color: cyan; margin-top: 50px; border-radius: 30px; 
-      height: 500px; padding-left: 50px; font-size: 20px; border-bottom: 13px  solid black; " >
+      height: 530px; padding-left: 50px; font-size: 20px; border-bottom: 13px  solid black; " >
           <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd><u>
            Hire Me Now !!</u></kbd></h2>
 
@@ -261,16 +262,16 @@
              <legend>Employer info:</legend>
 
              <label for="cname">Comany Name:</label>
-             <input type="text" id="cname"> <br>
+             <input type="text" id="cname" size="20" required> <br>
      
              <label for="email">Email:</label>
-             <input type="email" name="email" id="email"> <br>
+             <input type="email" name="email" id="email" size="33" required> <br>
      
              <label for="tel">Phone Numeber</label>
-             <input type="tel" name="tel" id="tel"> <br> 
+             <input type="tel" name="tel" id="tel" size="25" > <br> 
              
              <label for="homepage">Website:</label>
-             <input type="url" id="homepage" name="homepage" placeholder="Optional">
+             <input type="url" id="homepage" name="homepage" placeholder="Optional" size="40">
            </fieldset>
 
            <label for="location">Job Location:</label>
@@ -331,13 +332,10 @@
           =
           <output name="x" for="a b"  style="font-size: 60px;"></output> <span style="font-size: 25px;">%</span>
           <br><br>
-          <input type="submit" style="font-size: 25px;">
-          <input type="reset" value="Reset" style="font-size: 25px;">
+          <input type="button" style="font-size: 25px;" value="Submit" onclick="alert('THANKS FOR RATING THE SITE,Love You!!')">
+          <input type="reset" value="Reset" style="font-size: 25px;" >
         </form>  
       </div>
-
-
-
 
 
       <footer style=" margin-top: 40px;">
