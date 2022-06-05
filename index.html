@@ -207,11 +207,17 @@
         .
       </p>
 
-      <div style="Display: flex; align-items: center;Flex-direction: column; ">
+      <div style="Display: flex; align-items: center;Flex-direction: column; ">    
       <form style="background-color: cyan; margin-top: 50px; margin-left: 15px; margin-right: 15px; border-radius: 30px; 
       height: 600px; padding-left: 50px; font-size: 20px; border-bottom: 13px  solid black; width: 85%;">
-        <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd><u>Sign Up For My Online Courses</u></kbd></h2>
-        
+
+        <video src="course.mp4" width="60%" height="62%" style="float: right; 
+        margin-right: 20px; margin-top: 200px; border-radius: 10px; box-shadow: rgb(2, 2, 2) 0px 5px 5px 5px;
+        " controls autoplay></video>    
+
+        <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd><u>
+          Sign Up For My Online Courses</u></kbd></h2>
+     
         <label for="fname" >First Name:</label>
         <input type="text" id="fname" autocomplete="on" required> <br>
 
@@ -242,8 +248,8 @@
         <input type="checkbox" name="JavaScript" id="js"> <br>
 
         <label for="py">Python</label>
-        <input type="checkbox" name="Python" id="py"> <br>
-
+        <input type="checkbox" name="Python" id="py">    
+          
         <style>
           #reg:hover{
             background-color: blue;
@@ -342,6 +348,48 @@
           <input type="reset" value="Reset" style="font-size: 25px;" >
         </form>  
       </div>
+      </div>
+
+      <style>
+        #canvas1{
+          align-self: center;
+          align-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(255, 255, 255);
+          border-radius: 15px;
+          box-shadow: black 0px 10px 5px 0px;
+          margin-top: 15px;
+        }
+      </style>
+
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+      </script>
+       
+      <div style="align-items: center; display: flex; flex-direction: column;">
+
+      <canvas id="canvas1" width="400px" height="150px">
+      </canvas>
+
+      </div>
+
+      <div style="float: left;">
+      <svg width="200" height="200" >
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style=" fill:rgb(48, 22, 199);stroke:rgb(0, 128, 11);stroke-width:5;fill-rule:evenodd; margin-left: 80%; ">
+      </svg>
       </div>
 
       <footer style=" margin-top: 40px;">
