@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;1,700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;1,700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
     <style></style>
 
     </style>
 </head>
-<body style="background-color: rgb(35, 46, 58);">
+<body style="background-color: rgb(51, 65, 80);">
      <h1 style="font-size: 40px; text-align: center; color: rgb(255, 255, 255); border:2px solid DodgerBlue;"> 
       &hearts;(: HELLO ZAZU, I`M PORTABLE:)&hearts; </h1> </br>
       </h1>
@@ -345,8 +346,10 @@
         }
       </style>
       
-      <div style="Display: flex; align-items: center;Flex-direction: column; ">
-      <div class="card">
+      <div style="Display: flex; align-items: center;Flex-direction: column; animation: blink 5s infinite;
+      -webkit-animation: 5s infinite; ">
+      <div class="card" style="animation: blink 5s infinite;
+      -webkit-animation: 5s infinite;">
         <form action="/action_page.php"
           oninput="x.value=parseInt(a.value)+parseInt(b.value)">
           <h2 style="margin-left: 5px; color: rgb(255, 255, 255);">RATE MY WEBSITE</h2>
@@ -398,9 +401,55 @@
           font-size: 80px;
         }
       </style>
+<style>
+  @keyframes backgroundColorPalette {
+    0% {
+      background: red;
+    }
+    25% {
+      background: blue;
+    }
+    50% {
+      background: green;
+    }
+    75% {
+      background: rgb(255, 255, 87);
+    }
+    100% {
+      background: #9b5f52;
+    }
+  }
 
-      <div style="background-color: darkcyan; align-items: center; display: flex; flex-direction: column;
-      width: 100%; height: 380px; margin-top: 20px; ">
+@-webkit-keyframes backgroundColorPalette {
+  0% {
+    background: red;
+  }
+  25% {
+    background: blue;
+  }
+  50% {
+    background: green;
+  }
+  75% {
+    background: rgb(255, 255, 87);
+  }
+  100% {
+    background: #9b5f52;
+  }
+}
+
+#change{
+  background-color: darkcyan; 
+  align-items: center; display: flex; flex-direction: column;
+  width: 100%; height: 380px; margin-top: 20px;   
+  animation-name: backgroundColorPalette;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+</style>
+
+      <div id="change">
         <h2 style="text-align: center; color: white; font-family: 'Ubuntu', sans-serif; padding-top: 10px;
         font-size: 40px;" ><u>THANKS FOR VIEWING </u></h2>
         <img src="head.png" alt="music icon" class=".material-symbols-outlined " style="align-items: center;
