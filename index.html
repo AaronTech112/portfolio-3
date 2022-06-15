@@ -118,7 +118,7 @@
   <div style="position: sticky; top: 1px; align-items: center; width: 95%; margin-left: 2.5%;
               margin-top: -45px;">
     <nav style="font-size: 30px; text-align: center; background-color: rgb(195, 196, 250); font-style: normal;
-    padding: 40px;  border-radius:10px; font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;  border-radius:10px; font-family: Arial, Helvetica, sans-serif;
     align-items: center; box-shadow: 3px 3px 3px 3px blue;
     position: sticky; top: 2px;">
       <a href="#" >Home </a>&ndash;&ndash;&ndash;&ndash;
@@ -147,9 +147,10 @@
         </u> </b> </h2>
         <!--<ol> is an Ordered List-->
         <div style="color: white; background-repeat: no-repeat; background-size: 20%; 
-        background-position-x: 87%;
+        background-position-x: 87%; z-index: 1; position: relative;
         background-image: url('https://www.animatedimages.org/data/media/56/animated-computer-image-0265.gif') ">
-          <ol class="list" style="color: white; text-align: unset ; font-family: Arial, Helvetica, sans-serif; font-size: 25px; 
+          <ol class="list" style="color: white; text-align: unset ; font-family: Arial, Helvetica, sans-serif; 
+          font-size: 25px; z-index: 2; position: relative;
           padding-left: 110px;">
             <li class="list" >Python</li>
             <li class="list" >Django</li>
@@ -188,23 +189,30 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           style="padding-left: 20%;" allowfullscreen></iframe>
             
+      <div style="border-color: aliceblue;border-width: 5px 7px 5px 7px; border-style: solid;
+       ">
+        <h3 style="color: white; "
+        class="subhead"><u><b>
+          2.Password Generator 
+        </b></u></h3>
 
-          <h3 style="color: white; "
-          class="subhead"><u><b>
-            2.Password Generator 
-         </b></u></h3>
+        <style>
+          .para {
+            overflow: auto;
+             
+          }
+          </style>
 
-       <p class="para" style="padding-left: 5px; color: white;  text-align:justify;
-       text-indent: 10px; letter-spacing: 1px; line-height: 50px;">
-         My first Technology Project Was to Create and Build A successfull Youtube Channel 
-         for Tutorials on Technology Which now Provides Help To The Public <br/>
-         Check It Out :<a href="https://youtube.com/c/AaronTechandGaming">Here</a> <br/>
-         <img src="https://miro.medium.com/max/1400/1*KDUWoSI8R4I4VKTgHtSacQ.png" 
-         alt="Image Will Display Here" 
-         style="max-width: 500pxpx; height: 300px;
-         align-items: center; flex-direction: column; display: flex;">          
-       </p>
-
+        <div class="para" style=" color: white;  
+        text-indent: 10px; letter-spacing: 1px; line-height: 50px;">
+          My first Technology Project Was to Create and Build A successfull Youtube Channel 
+          for Tutorials on Technology Which now Provides Help To The Public
+          Check It Out :
+          <img src="https://miro.medium.com/max/1400/1*KDUWoSI8R4I4VKTgHtSacQ.png" 
+          alt="Image Will Display Here" 
+          style="float: right; width: 520px; height: 400px;">          
+        </div>
+      </div>    
        
        <h1 id="why" style="text-decoration-line: underline; text-decoration-style:double; text-decoration-color: rgb(255, 255, 255);
        text-decoration-thickness: 2px;  " >Daily Activites</h1>
@@ -310,12 +318,12 @@
         </script>
 
         <div style="float: left;width: 40%; margin-top: 10px; height: 150px; background-color: rgb(60, 202, 124);
-        text-align: center; font-size: 50px; ">
+        text-align: center; font-size: 50px; overflow-x: scroll; ">
             Remember Me By >>>
         </div>
 
         <div style="float: right; background-color: rgb(60, 58, 184); width: 60%; height: 150px; margin-top: 10px; 
-        font-size: 50px;  ">
+        font-size: 50px; overflow-y: scroll;  ">
           Pressing <kbd>Crtl+S</kbd> Now &#128516;
       </div> 
       <p>
@@ -323,57 +331,57 @@
       </p>
 
       <div style="Display: flex; align-items: center;Flex-direction: column; ">    
-      <form style="background-color: darkcyan; margin-top: 25px; margin-left: 5px; border-radius: 30px; 
-      height: 600px; padding-left: 42px; font-size: 20px; border-bottom: 13px  solid black; width: 85%;">
+        <form style="background-color: darkcyan; margin-top: 25px; margin-left: 5px; border-radius: 30px; 
+        height: 600px; padding-left: 42px; font-size: 20px; border-bottom: 13px  solid black; width: 85%;">
 
-        <video src="course.mp4" width="45%" height="50%" style=" margin-bottom: -512px; margin-left: 430px;
-     border-radius: 10px; box-shadow: rgb(2, 2, 2) 2px 8px 8px 8px; 
-        " controls autoplay muted></video>    
+            <video src="course.mp4" width="45%" height="50%" style=" margin-bottom: -512px; margin-left: 430px;
+        border-radius: 10px; box-shadow: rgb(2, 2, 2) 2px 8px 8px 8px; overflow-x: scroll;
+            " controls autoplay muted></video>    
 
-        <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd>
-          <u>Sign Up For My Online Courses</u></kbd></h2>
-     
-        <label for="fname" >First Name:</label>
-        <input type="text" id="fname" autocomplete="on" required> <br>
+            <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 50px;"><kbd>
+              <u>Sign Up For My Online Courses</u></kbd></h2>
+        
+            <label for="fname" >First Name:</label>
+            <input type="text" id="fname" autocomplete="on" required> <br>
 
-        <label for="sname">Surname:</label>
-        <input type="text" id="sname" required> <br>
+            <label for="sname">Surname:</label>
+            <input type="text" id="sname" required> <br>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" autocomplete="email" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="email" required> <br>
 
-        <label for="tel">Phone Numeber</label>
-        <input type="tel" name="tel" id="tel" autocomplete="tel" required> <br>
+            <label for="tel">Phone Numeber</label>
+            <input type="tel" name="tel" id="tel" autocomplete="tel" required> <br>
 
-        <b>Gender:</b> <br>
-        <label for="male">Male</label>
-        <input type="radio" name="male" id="male" required>
+            <b>Gender:</b> <br>
+            <label for="male">Male</label>
+            <input type="radio" name="male" id="male" required>
 
-        <label for="female">Female</label>
-        <input type="radio" name="female" id="female" required> <br>
+            <label for="female">Female</label>
+            <input type="radio" name="female" id="female" required> <br>
 
-        <b><u>Selected Prefered Programming Language: </u></b> <br>
-        <label for="html">HTML</label> 
-        <input type="checkbox" name="HTML" id="html"> <br>
+            <b><u>Selected Prefered Programming Language: </u></b> <br>
+            <label for="html">HTML</label> 
+            <input type="checkbox" name="HTML" id="html"> <br>
 
-        <label for="css">CSS</label> 
-        <input type="checkbox" name="CSS" id="css"> <br>
+            <label for="css">CSS</label> 
+            <input type="checkbox" name="CSS" id="css"> <br>
 
-        <label for="js">JavaScript</label>
-        <input type="checkbox" name="JavaScript" id="js"> <br>
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="JavaScript" id="js"> <br>
 
-        <label for="py">Python</label>
-        <input type="checkbox" name="Python" id="py">    
-          
-        <style>
-          #reg:hover{
-            background-color: blue;
-          }
-        </style>
-        <input type="button" value="Register Now" id="reg" style="margin-left: 30px; font-size: 25px; 
-        background-color: green; color: honeydew;"  >
+            <label for="py">Python</label>
+            <input type="checkbox" name="Python" id="py">    
+              
+            <style>
+              #reg:hover{
+                background-color: blue;
+              }
+            </style>
+            <input type="button" value="Register Now" id="reg" style="margin-left: 30px; font-size: 25px; 
+            background-color: green; color: honeydew;"  >
 
-      </form>
+        </form>
       </div>
       
       <div style="Display: flex; align-items: center;Flex-direction: column; height: 700px; margin-bottom: 20px;">
