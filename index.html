@@ -114,17 +114,38 @@
         style="width: 450px; height: 141px; align-items: center; display: flex; flex-direction: column;" />
       </p>
   </div> 
+
+  <style>
+    .nav{
+      text-decoration: none;
+      display: inline-block;
+      background-size: 50%;
+      
+    }
+
+    .nav:hover{
+      background-color: aqua;
+
+    }
+
+    .active{
+      background-color: red;
+      text-decoration: none;
+      display: inline-block;
+      background-size: 50%;
+    }
+  </style>
     
   <div style="position: sticky; top: 1px; align-items: center; width: 95%; margin-left: 2.5%;
-              margin-top: -45px;">
+              margin-top: -45px; overflow:hidden">
     <nav style="font-size: 30px; text-align: center; background-color: rgb(195, 196, 250); font-style: normal;
     padding: 30px;  border-radius:10px; font-family: Arial, Helvetica, sans-serif;
-    align-items: center; box-shadow: 3px 3px 3px 3px blue;
+    align-items: center; box-shadow: 5px 5px 5px 5px blue;
     position: sticky; top: 2px;">
-      <a href="#" >Home </a>&ndash;&ndash;&ndash;&ndash;
-      <a href="#C2">Projects</a>&ndash;&ndash;&ndash;&ndash;
-      <a href="#">About</a>&ndash;&ndash;&ndash;&ndash;
-      <a href="#">Hire me</a>       
+      <a href="#"  class ="active">Home </a>
+      <a href="#C2"  class ="nav " >Projects</a>
+      <a href="#"  class ="nav " >About</a>
+      <a href="#"  class ="nav " >Hire me</a>       
     </nav>
   </div>
 
