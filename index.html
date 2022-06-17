@@ -140,18 +140,60 @@
       text-decoration: underline;
     }
 
+/*  .... Drop down Mwnu Style, Logics And Position......  */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 8px;
+    }
+
+    .dropdown-content a {
+      text-decoration: none;
+      display: block;
+      background-size: cover;
+      padding: 5px; 
+      border-color: blueviolet;
+      font-size: 35px; 
+      width: 400px;
+      box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.2);      
+    }
+
+    .dropdown-content a:hover {background-color: #c2c2c2}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }  
+
   </style>
     
   <div style="position: sticky; top: 1px; align-items: center; width: 95%; margin-left: 2.5%;
               margin-top: -45px; "  >
+    <div>
+      
+    </div>          
     <nav style="font-size: 30px; text-align: center; background-color: rgb(195, 196, 250); font-style: normal;
     padding: 30px;  border-radius:10px; font-family: Arial, Helvetica, sans-serif;
     align-items: center; box-shadow: 3px 3px 3px 5px blue; height: 35px; 
     position: sticky; top: 2px;">
-      <a href="#home" class="nav" id="land" >Home </a>
-      <a href="#C2" class="nav" >Projects</a>
-      <a href="#" class="nav" >About</a>
-      <a href="#" class="nav" >Hire me</a>       
+
+      <div class="dropdown">
+        <img src="menu.png" alt="menu icon" style="float: left; width: 100px; height: 90px; display: block;
+        text-align: center;  margin-top: -20px; cursor: pointer;" class="dropbtn">
+        <div class="dropdown-content">
+          <a href="#home" class="nav" id="land" >Home </a>
+          <a href="#C2" class="nav" >Projects</a>
+          <a href="#" class="nav" >About</a>
+          <a href="#" class="nav" >Hire me</a> 
+        </div>
+      </div>
+        <a href="#home" class="nav" id="land" >Home </a>
+        <a href="#C2" class="nav" >Projects</a>
+        <a href="#" class="nav" >About</a>
+        <a href="#" class="nav" >Hire me</a>       
     </nav>
   </div>
 
@@ -167,6 +209,12 @@
         
         </p>
         
+        <style>
+          ::marker { 
+            color: blue;
+            font-size: 23px;
+          }
+          </style>
         
         <h2 style="color: rgb(195, 196, 250); text-align: unset; padding-left: 20px;" 
         class="heads" > <b> <u>
@@ -188,6 +236,21 @@
           </ol>
         </div>
 
+        <style>
+          p::first-letter{
+            color: blue;
+            font-size: 50px;
+          }
+
+          .opacy{
+            opacity: 0.8;
+          }
+
+          .opacy:hover{
+            opacity: 1.0;
+          }
+          
+        </style>
 
           <h2 id="C2" style="color: rgb(195, 196, 250); text-align: unset;  margin-top: 100px; "
           class="heads" ><u><b>
@@ -204,19 +267,20 @@
             text-indent: 10px; letter-spacing: 1px; line-height: 50px;">
               My first Technology Project Was to Create and Build A successfull Youtube Channel 
               for Tutorials on Technology Which now Provides Help To The Public
+              Check It Out :<a id="link" href="https://youtube.com/c/AaronTechandGaming" title="View Youtube channel and subcribe" target="_blank">Here</a> 
             </p> <br/>
-            Check It Out :<a id="link" href="https://youtube.com/c/AaronTechandGaming" title="View Youtube channel and subcribe" target="_blank">Here</a> <br/>
+            
             <a  href="https://youtube.com/c/AaronTechandGaming" title="Tap To View Youtube Channel" target="_blank">
                <img src="yt.png" alt="Image Showing Here" 
                style="height: 20px; width: 20px; float: unset;">
             </a>
           
             <iframe src="yt2.png" frameborder="1" title="Youtube Channel"
-              style="margin-left: 40px; height: 400px; width: 900px; ">
+              style="margin-left: 40px; height: 400px; width: 900px; " class="opacy">
             </iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rMNB-z7i0qE" title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            style="padding-left: 20%;" allowfullscreen></iframe>
+            style="padding-left: 20%;" class="opacy" allowfullscreen ></iframe>
           </div>          
             
       <div style="border-color: aliceblue;border-width: 5px 7px 5px 7px; border-style: solid;
@@ -229,7 +293,6 @@
         <style>
           .para {
             overflow: auto;
-             
           }
           </style>
  
@@ -237,7 +300,7 @@
         text-indent: 10px; letter-spacing: 1px; line-height: 50px;">
           <img src="https://miro.medium.com/max/1400/1*KDUWoSI8R4I4VKTgHtSacQ.png" 
           alt="Image Will Display Here" 
-          style="float: right; width: 300px; height: 250px; "> 
+          style="float: right; width: 300px; height: 250px;" class="opacy"> 
           My first Technology Project Was to Create and Build A successfull Youtube Channel 
           for Tutorials on Technology Which now Provides Help To The Public
           Check It Out :
