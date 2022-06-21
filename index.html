@@ -135,13 +135,14 @@
       margin-right: 30px;
       margin-top: -20px;
       border-radius: 10px 25px;
-      transition: 1s;
+      transition: 0.5s;
     }
 
     .nav:hover{
       background-color: aqua;
       text-decoration: underline;
       padding: 15px;
+      transform: rotateY(360deg) ;
     }
 
     #land:active{
@@ -231,9 +232,31 @@
             Skills
         </u> </b> </h2>
         <!--<ol> is an Ordered List-->
-        <div style="color: white; background-repeat: no-repeat; background-size: 20%; 
-        background-position-x: 87%; position: relative;
-        background-image: url('https://www.animatedimages.org/data/media/56/animated-computer-image-0265.gif') ">
+
+        <style> 
+          .backgif {
+            z-index: 1;
+            width: 170px;
+            height: 170px;
+            position: relative;
+            left: 80px;
+            animation-name: backanime;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+          }
+          
+          @keyframes backanime {
+            0%   { left:0px; top:0px;}
+            25%  {left:800px; top:0px;}
+            50%  { left:800px; top:600px;}
+            75%  { left:0px; top:600px;}
+            100% { left:0px; top:0px;}
+          }
+        </style>
+
+        <div style="color: white;">
+          <img src="robogif.gif " 
+          alt="gif apear here"  class="backgif">
           <ol class="list" style="color: white; text-align: unset ; font-family: Arial, Helvetica, sans-serif; 
           font-size: 25px; position: relative;
           padding-left: 110px;">
@@ -516,6 +539,7 @@
         .hireanime{
           padding: 30px;
           transition: 1.5s;
+          transition-timing-function: ease-in;
         }
 
         .hireanime:hover{
