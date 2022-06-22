@@ -160,6 +160,7 @@
       box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
       z-index: 1;
       border-radius: 8px;
+      position: absolute; 
     }
 
     .dropdown-content a {
@@ -170,7 +171,7 @@
       border-color: blueviolet;
       font-size: 35px; 
       width: 400px;
-      box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.2);      
+      box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.2);     
     }
 
     .dropdown-content a:hover {background-color: #c2c2c2}
@@ -193,7 +194,7 @@
 
       <div class="dropdown">
         <img src="menu.png" alt="menu icon" style="float: left; width: 100px; height: 90px; display: block;
-        text-align: center;  margin-top: -20px; cursor: pointer;" class="dropbtn">
+        text-align: center;  margin-top: -20px; cursor: pointer; position: relative;" class="dropbtn">
         <div class="dropdown-content">
           <a href="#home" class="nav" id="land" >Home </a>
           <a href="#C2" class="nav" >Projects</a>
@@ -411,11 +412,45 @@
             overflow: hidden;
             justify-content: center;
           }
+
+          .tooltiptext{
+            visibility: hidden;
+            width: 180px;
+            height: 30px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            display: inline-block;
+            position: absolute;
+            left: 58%;
+            margin-top: -15px;
+            opacity: 0;
+            transition: 1s;
+          }
+
+          .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+          }
+
         </style>
 
       <style>
         #click:hover{
           background-color: darkred;
+        }
+
+        .tooltip:hover .tooltiptext{
+          visibility: visible;
+          opacity: 1;
         }
       </style>
 
@@ -428,7 +463,9 @@
        </div>
 
       <div style="text-align: center;">
-      <button id="click" onclick="ClickFunction()"> <h2 style="text-align: center; align-content: center;">CLICK ME !!</h2></button>
+        <button class="tooltip" id="click" onclick="ClickFunction()"> <h2 style="text-align: center; align-content: center;">CLICK ME !!
+          <span class="tooltiptext">You will be suprised</span></h2></button>
+
       </div>
 
        <div class="cool" id="why2">
