@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Portfolio content="HTML, CSS, JavaScript" >
-    <title>Aaron Portfolio</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,7 +110,7 @@
                 border-style: solid dotted double; border-width: 5px 7px 5px 7px; 
                 font-family: Sofia, sans-serif;
                 text-shadow: 4px 4px blue;"> 
-      &hearts;(: HELLO WORLD, I`M AARON:)&hearts; </h1> </br>
+      &hearts;(: HELLO ZAZU, I`M PORTABLE:)&hearts; </h1> </br>
       </h1>
       <h1 style="font-size: 50px; text-align: center; color: rgb(255, 255, 255); margin-top: 0.5px;"> 
         &#128525; </h1>
@@ -255,6 +255,8 @@
             75%  { left:0px; top:600px;}
             100% { left:0px; top:0px;}
           }
+
+          
         </style>
 
         <div style="color: white;">
@@ -381,8 +383,8 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-width: 2px; border-style: solid; 
           position: relative; z-index: 0; overflow: hidden; " class="contain">
             <img src="https://miro.medium.com/max/1400/1*KDUWoSI8R4I4VKTgHtSacQ.png" 
-            alt="Image Will Display Here" class="opacy3" style="width: 310px; height: 250px; margin-left: -10px;
-            display: block;z-index: 1; "> 
+            alt="Image Will Display Here" class="opacy3" style="width:300px; height: 250px; margin-left: -10px;
+            display: block;z-index: 1;   "> 
             <div class="overlay" > By Aaron Tech</div>
           </div>
           My first Technology Project Was to Create and Build A successfull Youtube Channel 
@@ -451,14 +453,19 @@
 
         <style>
           #click{
-            color: white;
-            background-color: rgb(46, 46, 190);
+            color: blue;
             width: 200px;
             height: 45px;
             font-family: Open sans-serif;
             text-align: center;
-            overflow: hidden;
-            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 5px;
+            border-width: 3px;
+            border-color: blue;
+            transition: 0.3s;
           }
 
           .tooltiptext{
@@ -469,7 +476,7 @@
             color: #fff;
             text-align: center;
             border-radius: 6px;
-            padding: 5px;
+            padding: 18px;
             display: inline-block;
             position: absolute;
             left: 58%;
@@ -493,12 +500,14 @@
 
       <style>
         #click:hover{
-          background-color: darkred;
+          background-color: blue;
+          color: white;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
 
         .tooltip:hover .tooltiptext{
           visibility: visible;
-          opacity: 1;
+          opacity: 0.8;
         }
       </style>
 
@@ -511,14 +520,14 @@
        </div>
 
       <div style="text-align: center;">
-        <button class="tooltip" id="click" onclick="ClickFunction()"> <h2 style="text-align: center; align-content: center;">CLICK ME !!
-          <span class="tooltiptext">You will be suprised</span></h2></button>
+        <button class="tooltip" id="click" onclick="ClickFunction()">CLICK ME !!
+          <span class="tooltiptext">You will be suprised</span></button>
 
       </div>
 
        <div class="cool" id="why2">
         <h2>Ready Learn More</h2>
-        <h3>I am Always ready to learn more with people</h3>
+        <h3 style="color: white;">I am Always ready to learn more with people</h3>
         </div>
 
         <script>
@@ -529,7 +538,9 @@
             document.getElementById("why1").style.backgroundColor="black";  
             document.getElementById("why1").style.color="White"; 
             document.getElementById("why1").style.fontSize="20px"
-            document.getElementById("click").innerHTML="Opps!!"     
+            document.getElementById("click").innerHTML="Opps!!"
+            document.getElementById("click").style.cursor="not-allowed"  
+            document.getElementById("click").style.opacity="0.5"    
           }
         </script>
 
@@ -614,10 +625,55 @@
               .reg:hover{
                 background-color: darkgreen;
               }
+              .button {
+                display: block;
+                border-radius: 8px;
+                border-color: white;
+                border-width: 5px;
+                background-color: green;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 28px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0.8;
+              }
+
+              .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+              }
+
+              .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+              }
+
+              .button:hover span {
+                padding-right: 25px;
+              }
+              
+              .button:hover{
+                opacity: 1;
+              }
+
+              .button:hover span:after {
+                opacity: 1;
+                right: 0;
+              }
             </style>
-            <input type="button" value="Register Now" class="reg" style="margin-left: 40%; 
-            font-family: 'Times New Roman', Times, serif; font-size: 20px; 
-            background-color: green; color: honeydew; text-align: center; padding:30px 30px; "  >
+            <button class="button"> <span>Register</span></button>
 
         </form>
       </div>
@@ -675,16 +731,38 @@
             <label for="date">Starting Date:</label>
             <input type="date" name="date" id="date">  
 
-            <button type="submit" name="HIRE NOW" id="hire" onclick="alert('THANKS FOR HIRING ME!!')">HIRE NOW</button>
+            <button  class="button2" onclick="alert('THANKS FOR HIRING ME!!')">
+              HIRE NOW</button>
  
             <style>
-              #hire{
-                background-color: lightseagreen;
-                font-size: 25px; 
-                font-family:'Trebuchet MS'; 
-                margin-top: 8px; 
-                background-color: lightslategrey; 
+              .button2{
+                display: block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: #4CAF50;
+                border-radius: 10px;
+                box-shadow: 0 9px #999;
+                margin-top: 15px;
+                border-color: white;
+                border-width: 3px;
               }
+
+              .button2:hover {
+                background-color: #3e8e41;
+                text-decoration: underline;
+              }
+
+              .button2:active {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+              }
+              
             </style>
         </form>
       </div>
@@ -812,14 +890,17 @@
         animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
+        -webkit-box-reflect: below 300px;
+
       }
+      
       </style>
 
-      <div id="change" style="margin-top: 30px;">
+      <div id="change" style="margin-top: 30px; ">
         <h2 style="text-align: center; color: white; font-family: 'Ubuntu', sans-serif; padding-top: 10px;
         font-size: 40px;" ><u>THANKS FOR VIEWING </u></h2>
         <img src="head.png" alt="music icon" class=".material-symbols-outlined " style="align-items: center;
-        display: flex; flex-direction: column; width: 20%; height: 150px;">
+        display: flex; flex-direction: column; width: 20%; height: 150px;" >
         <audio src="lil.mp3"controls id="music"></audio>
         <figcaption style="font-size: 30px; font-family: 'Anonymous Pro', monospace;
         font-family: 'Ubuntu', sans-serif;" >Please Enjoy This Songs</figcaption>
