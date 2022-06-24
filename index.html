@@ -22,6 +22,8 @@
     </style>
 
 </head>
+
+
 <body class="body" >
 
   <style>
@@ -237,6 +239,7 @@
         <style> 
           .backgif {
             z-index: 0;
+            resize: both;
             width: 170px;
             height: 170px;
             position: relative;
@@ -331,7 +334,7 @@
             <iframe src="yt2.png" frameborder="1" title="Youtube Channel"
               style="margin-left: auto; margin-right: auto; height: 400px; width: 800px; display: block;
                text-align: center; border-radius: 5px; box-shadow: 3px 3px 3px 3px black; border-color: white;
-               border-width: 5px;
+               border-width: 5px; resize: both;
                " class="opacy">
             </iframe>
 
@@ -921,11 +924,17 @@
           font-family: Sofia, sans-serif;
         }
         .credits{
-          column-count: 3;
+          column-count: 4;
           column-gap: 40px;
           column-rule-color: #fff;
           column-rule-style: solid;
           column-width: 7px;
+        }
+
+        @media screen and (max-width: 700px) {
+          .credits{
+            column-count: 2;
+          }
         }
       </style>
 
