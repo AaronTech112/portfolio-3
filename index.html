@@ -924,7 +924,7 @@
           font-family: Sofia, sans-serif;
         }
         .credits{
-          column-count: 4;
+          column-count: 3;
           column-gap: 40px;
           column-rule-color: #fff;
           column-rule-style: solid;
@@ -933,8 +933,30 @@
 
         @media screen and (max-width: 700px) {
           .credits{
-            column-count: 2;
+            column-count: 1;
           }
+        }
+      </style>
+
+      <style>
+        .flex-container{
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: dodgerblue;
+          flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 50px;
+          height: 50px;
+          border-radius: 3px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
         }
       </style>
 
@@ -947,7 +969,22 @@
         <div class="credits">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
         </div>
+
+        <div class="flex-container">
+          <div> &#8656; </div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>  
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>  
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>  
+          <div> &#8658; </div>
+        </div>
      </footer>
+
 
 </body>
 </html>
